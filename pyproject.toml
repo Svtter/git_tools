@@ -17,13 +17,16 @@ pre-commit = "^2.20.0"
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-[[tool.poetry.source]]
-name = "thinghoo"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-default = true
-
 # -- FILE: pytest.ini (or tox.ini)
 [tool.pytest.ini_options]
 # -- recommended but optional:
 python_files = "tests.py test_*.py *_tests.py"
 addopts = "-n3"
+
+[[tool.poetry.source]]
+name = "private-pypi"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+[tool.poetry.scripts]
+git_tools = "git_tools.__main__:cli"
