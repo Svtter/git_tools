@@ -1,20 +1,4 @@
 [[package]]
-name = "asgiref"
-version = "3.5.2"
-description = "ASGI specs, helper code, and adapters"
-category = "main"
-optional = false
-python-versions = ">=3.7"
-
-[package.extras]
-tests = ["mypy (>=0.800)", "pytest", "pytest-asyncio"]
-
-[package.source]
-type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
-
-[[package]]
 name = "attrs"
 version = "22.1.0"
 description = "Classes Without Boilerplate"
@@ -30,8 +14,8 @@ tests_no_zope = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy 
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "cfgv"
@@ -43,21 +27,37 @@ python-versions = ">=3.6.1"
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
+
+[[package]]
+name = "click"
+version = "8.1.3"
+description = "Composable command line interface toolkit"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+colorama = {version = "*", markers = "platform_system == \"Windows\""}
+
+[package.source]
+type = "legacy"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
-category = "dev"
+category = "main"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "distlib"
@@ -69,30 +69,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
-
-[[package]]
-name = "django"
-version = "3.2.16"
-description = "A high-level Python Web framework that encourages rapid development and clean, pragmatic design."
-category = "main"
-optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-asgiref = ">=3.3.2,<4"
-pytz = "*"
-sqlparse = ">=0.2.2"
-
-[package.extras]
-argon2 = ["argon2-cffi (>=19.1.0)"]
-bcrypt = ["bcrypt"]
-
-[package.source]
-type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "exceptiongroup"
@@ -107,8 +85,8 @@ test = ["pytest (>=6)"]
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "execnet"
@@ -123,25 +101,25 @@ testing = ["pre-commit"]
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "filelock"
-version = "3.8.0"
+version = "3.8.2"
 description = "A platform independent file lock."
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 
 [package.extras]
-docs = ["furo (>=2022.6.21)", "sphinx (>=5.1.1)", "sphinx-autodoc-typehints (>=1.19.1)"]
-testing = ["covdefaults (>=2.2)", "coverage (>=6.4.2)", "pytest (>=7.1.2)", "pytest-cov (>=3)", "pytest-timeout (>=2.1)"]
+docs = ["furo (>=2022.9.29)", "sphinx (>=5.3)", "sphinx-autodoc-typehints (>=1.19.5)"]
+testing = ["covdefaults (>=2.2.2)", "coverage (>=6.5)", "pytest (>=7.2)", "pytest-cov (>=4)", "pytest-timeout (>=2.1)"]
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "identify"
@@ -156,8 +134,8 @@ license = ["ukkonen"]
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "iniconfig"
@@ -169,8 +147,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "nodeenv"
@@ -182,28 +160,25 @@ python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "packaging"
-version = "21.3"
+version = "22.0"
 description = "Core utilities for Python packages"
 category = "dev"
 optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-pyparsing = ">=2.0.2,<3.0.5 || >3.0.5"
+python-versions = ">=3.7"
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "platformdirs"
-version = "2.5.4"
+version = "2.6.0"
 description = "A small Python package for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
 category = "dev"
 optional = false
@@ -215,8 +190,8 @@ test = ["appdirs (==1.4.4)", "pytest (>=7.2)", "pytest-cov (>=4)", "pytest-mock 
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "pluggy"
@@ -232,8 +207,8 @@ testing = ["pytest", "pytest-benchmark"]
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "pre-commit"
@@ -253,24 +228,8 @@ virtualenv = ">=20.0.8"
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
-
-[[package]]
-name = "pyparsing"
-version = "3.0.9"
-description = "pyparsing module - Classes and methods to define and execute parsing grammars"
-category = "dev"
-optional = false
-python-versions = ">=3.6.8"
-
-[package.extras]
-diagrams = ["jinja2", "railroad-diagrams"]
-
-[package.source]
-type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "pytest"
@@ -294,36 +253,16 @@ testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
-
-[[package]]
-name = "pytest-django"
-version = "4.5.2"
-description = "A Django plugin for pytest."
-category = "dev"
-optional = false
-python-versions = ">=3.5"
-
-[package.dependencies]
-pytest = ">=5.4.0"
-
-[package.extras]
-docs = ["sphinx", "sphinx-rtd-theme"]
-testing = ["django", "django-configurations (>=2.0)"]
-
-[package.source]
-type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "pytest-xdist"
-version = "3.0.2"
-description = "pytest xdist plugin for distributed testing and loop-on-failing modes"
+version = "3.1.0"
+description = "pytest xdist plugin for distributed testing, most importantly across multiple CPUs"
 category = "dev"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [package.dependencies]
 execnet = ">=1.1"
@@ -336,21 +275,8 @@ testing = ["filelock"]
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
-
-[[package]]
-name = "pytz"
-version = "2022.6"
-description = "World timezone definitions, modern and historical"
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.source]
-type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "pyyaml"
@@ -362,21 +288,8 @@ python-versions = ">=3.6"
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
-
-[[package]]
-name = "sqlparse"
-version = "0.4.3"
-description = "A non-validating SQL parser."
-category = "main"
-optional = false
-python-versions = ">=3.5"
-
-[package.source]
-type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "toml"
@@ -388,8 +301,8 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "tomli"
@@ -401,12 +314,12 @@ python-versions = ">=3.7"
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [[package]]
 name = "virtualenv"
-version = "20.16.7"
+version = "20.17.1"
 description = "Virtual Python Environment builder"
 category = "dev"
 optional = false
@@ -423,19 +336,15 @@ testing = ["coverage (>=6.2)", "coverage-enable-subprocess (>=1)", "flaky (>=3.7
 
 [package.source]
 type = "legacy"
-url = "https://nexus.beijing-epoch.com/repository/pypi-thinghoo-group/simple"
-reference = "thinghoo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "private-pypi"
 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "e2a508fc894c20a82a9470dd062db43dcc98ce309873ae1acc56feed6bccd0e6"
+content-hash = "437426fe6fb331b9a389447f786d37c959961da322806049086a7ef52f5ed74a"
 
 [metadata.files]
-asgiref = [
-    {file = "asgiref-3.5.2-py3-none-any.whl", hash = "sha256:1d2880b792ae8757289136f1db2b7b99100ce959b2aa57fd69dab783d05afac4"},
-    {file = "asgiref-3.5.2.tar.gz", hash = "sha256:4a29362a6acebe09bf1d6640db38c1dc3d9217c68e6f9f6204d72667fc19a424"},
-]
 attrs = [
     {file = "attrs-22.1.0-py2.py3-none-any.whl", hash = "sha256:86efa402f67bf2df34f51a335487cf46b1ec130d02b8d39fd248abfd30da551c"},
     {file = "attrs-22.1.0.tar.gz", hash = "sha256:29adc2665447e5191d0e7c568fde78b21f9672d344281d0c6e1ab085429b22b6"},
@@ -444,6 +353,10 @@ cfgv = [
     {file = "cfgv-3.3.1-py2.py3-none-any.whl", hash = "sha256:c6a0883f3917a037485059700b9e75da2464e6c27051014ad85ba6aaa5884426"},
     {file = "cfgv-3.3.1.tar.gz", hash = "sha256:f5a830efb9ce7a445376bb66ec94c638a9787422f96264c98edc6bdeed8ab736"},
 ]
+click = [
+    {file = "click-8.1.3-py3-none-any.whl", hash = "sha256:bb4d8133cb15a609f44e8213d9b391b0809795062913b383c62be0ee95b1db48"},
+    {file = "click-8.1.3.tar.gz", hash = "sha256:7682dc8afb30297001674575ea00d1814d808d6a36af415a82bd481d37ba7b8e"},
+]
 colorama = [
     {file = "colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"},
     {file = "colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"},
@@ -451,10 +364,6 @@ colorama = [
 distlib = [
     {file = "distlib-0.3.6-py2.py3-none-any.whl", hash = "sha256:f35c4b692542ca110de7ef0bea44d73981caeb34ca0b9b6b2e6d7790dda8f80e"},
     {file = "distlib-0.3.6.tar.gz", hash = "sha256:14bad2d9b04d3a36127ac97f30b12a19268f211063d8f8ee4f47108896e11b46"},
-]
-django = [
-    {file = "Django-3.2.16-py3-none-any.whl", hash = "sha256:18ba8efa36b69cfcd4b670d0fa187c6fe7506596f0ababe580e16909bcdec121"},
-    {file = "Django-3.2.16.tar.gz", hash = "sha256:3adc285124244724a394fa9b9839cc8cd116faf7d159554c43ecdaa8cdf0b94d"},
 ]
 exceptiongroup = [
     {file = "exceptiongroup-1.0.4-py3-none-any.whl", hash = "sha256:542adf9dea4055530d6e1279602fa5cb11dab2395fa650b8674eaec35fc4a828"},
@@ -465,8 +374,8 @@ execnet = [
     {file = "execnet-1.9.0.tar.gz", hash = "sha256:8f694f3ba9cc92cab508b152dcfe322153975c29bda272e2fd7f3f00f36e47c5"},
 ]
 filelock = [
-    {file = "filelock-3.8.0-py3-none-any.whl", hash = "sha256:617eb4e5eedc82fc5f47b6d61e4d11cb837c56cb4544e39081099fa17ad109d4"},
-    {file = "filelock-3.8.0.tar.gz", hash = "sha256:55447caa666f2198c5b6b13a26d2084d26fa5b115c00d065664b2124680c4edc"},
+    {file = "filelock-3.8.2-py3-none-any.whl", hash = "sha256:8df285554452285f79c035efb0c861eb33a4bcfa5b7a137016e32e6a90f9792c"},
+    {file = "filelock-3.8.2.tar.gz", hash = "sha256:7565f628ea56bfcd8e54e42bdc55da899c85c1abfe1b5bcfd147e9188cebb3b2"},
 ]
 identify = [
     {file = "identify-2.5.9-py2.py3-none-any.whl", hash = "sha256:a390fb696e164dbddb047a0db26e57972ae52fbd037ae68797e5ae2f4492485d"},
@@ -481,12 +390,12 @@ nodeenv = [
     {file = "nodeenv-1.7.0.tar.gz", hash = "sha256:e0e7f7dfb85fc5394c6fe1e8fa98131a2473e04311a45afb6508f7cf1836fa2b"},
 ]
 packaging = [
-    {file = "packaging-21.3-py3-none-any.whl", hash = "sha256:ef103e05f519cdc783ae24ea4e2e0f508a9c99b2d4969652eed6a2e1ea5bd522"},
-    {file = "packaging-21.3.tar.gz", hash = "sha256:dd47c42927d89ab911e606518907cc2d3a1f38bbd026385970643f9c5b8ecfeb"},
+    {file = "packaging-22.0-py3-none-any.whl", hash = "sha256:957e2148ba0e1a3b282772e791ef1d8083648bc131c8ab0c1feba110ce1146c3"},
+    {file = "packaging-22.0.tar.gz", hash = "sha256:2198ec20bd4c017b8f9717e00f0c8714076fc2fd93816750ab48e2c41de2cfd3"},
 ]
 platformdirs = [
-    {file = "platformdirs-2.5.4-py3-none-any.whl", hash = "sha256:af0276409f9a02373d540bf8480021a048711d572745aef4b7842dad245eba10"},
-    {file = "platformdirs-2.5.4.tar.gz", hash = "sha256:1006647646d80f16130f052404c6b901e80ee4ed6bef6792e1f238a8969106f7"},
+    {file = "platformdirs-2.6.0-py3-none-any.whl", hash = "sha256:1a89a12377800c81983db6be069ec068eee989748799b946cce2a6e80dcc54ca"},
+    {file = "platformdirs-2.6.0.tar.gz", hash = "sha256:b46ffafa316e6b83b47489d240ce17173f123a9b9c83282141c3daf26ad9ac2e"},
 ]
 pluggy = [
     {file = "pluggy-1.0.0-py2.py3-none-any.whl", hash = "sha256:74134bbf457f031a36d68416e1509f34bd5ccc019f0bcc952c7b909d06b37bd3"},
@@ -496,25 +405,13 @@ pre-commit = [
     {file = "pre_commit-2.20.0-py2.py3-none-any.whl", hash = "sha256:51a5ba7c480ae8072ecdb6933df22d2f812dc897d5fe848778116129a681aac7"},
     {file = "pre_commit-2.20.0.tar.gz", hash = "sha256:a978dac7bc9ec0bcee55c18a277d553b0f419d259dadb4b9418ff2d00eb43959"},
 ]
-pyparsing = [
-    {file = "pyparsing-3.0.9-py3-none-any.whl", hash = "sha256:5026bae9a10eeaefb61dab2f09052b9f4307d44aee4eda64b309723d8d206bbc"},
-    {file = "pyparsing-3.0.9.tar.gz", hash = "sha256:2b020ecf7d21b687f219b71ecad3631f644a47f01403fa1d1036b0c6416d70fb"},
-]
 pytest = [
     {file = "pytest-7.2.0-py3-none-any.whl", hash = "sha256:892f933d339f068883b6fd5a459f03d85bfcb355e4981e146d2c7616c21fef71"},
     {file = "pytest-7.2.0.tar.gz", hash = "sha256:c4014eb40e10f11f355ad4e3c2fb2c6c6d1919c73f3b5a433de4708202cade59"},
 ]
-pytest-django = [
-    {file = "pytest-django-4.5.2.tar.gz", hash = "sha256:d9076f759bb7c36939dbdd5ae6633c18edfc2902d1a69fdbefd2426b970ce6c2"},
-    {file = "pytest_django-4.5.2-py3-none-any.whl", hash = "sha256:c60834861933773109334fe5a53e83d1ef4828f2203a1d6a0fa9972f4f75ab3e"},
-]
 pytest-xdist = [
-    {file = "pytest-xdist-3.0.2.tar.gz", hash = "sha256:688da9b814370e891ba5de650c9327d1a9d861721a524eb917e620eec3e90291"},
-    {file = "pytest_xdist-3.0.2-py3-none-any.whl", hash = "sha256:9feb9a18e1790696ea23e1434fa73b325ed4998b0e9fcb221f16fd1945e6df1b"},
-]
-pytz = [
-    {file = "pytz-2022.6-py2.py3-none-any.whl", hash = "sha256:222439474e9c98fced559f1709d89e6c9cbf8d79c794ff3eb9f8800064291427"},
-    {file = "pytz-2022.6.tar.gz", hash = "sha256:e89512406b793ca39f5971bc999cc538ce125c0e51c27941bef4568b460095e2"},
+    {file = "pytest-xdist-3.1.0.tar.gz", hash = "sha256:40fdb8f3544921c5dfcd486ac080ce22870e71d82ced6d2e78fa97c2addd480c"},
+    {file = "pytest_xdist-3.1.0-py3-none-any.whl", hash = "sha256:70a76f191d8a1d2d6be69fc440cdf85f3e4c03c08b520fd5dc5d338d6cf07d89"},
 ]
 pyyaml = [
     {file = "PyYAML-6.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:d4db7c7aef085872ef65a8fd7d6d09a14ae91f691dec3e87ee5ee0539d516f53"},
@@ -558,10 +455,6 @@ pyyaml = [
     {file = "PyYAML-6.0-cp39-cp39-win_amd64.whl", hash = "sha256:b3d267842bf12586ba6c734f89d1f5b871df0273157918b0ccefa29deb05c21c"},
     {file = "PyYAML-6.0.tar.gz", hash = "sha256:68fb519c14306fec9720a2a5b45bc9f0c8d1b9c72adf45c37baedfcd949c35a2"},
 ]
-sqlparse = [
-    {file = "sqlparse-0.4.3-py3-none-any.whl", hash = "sha256:0323c0ec29cd52bceabc1b4d9d579e311f3e4961b98d174201d5622a23b85e34"},
-    {file = "sqlparse-0.4.3.tar.gz", hash = "sha256:69ca804846bb114d2ec380e4360a8a340db83f0ccf3afceeb1404df028f57268"},
-]
 toml = [
     {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},
     {file = "toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"},
@@ -571,6 +464,6 @@ tomli = [
     {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
 ]
 virtualenv = [
-    {file = "virtualenv-20.16.7-py3-none-any.whl", hash = "sha256:efd66b00386fdb7dbe4822d172303f40cd05e50e01740b19ea42425cbe653e29"},
-    {file = "virtualenv-20.16.7.tar.gz", hash = "sha256:8691e3ff9387f743e00f6bb20f70121f5e4f596cae754531f2b3b3a1b1ac696e"},
+    {file = "virtualenv-20.17.1-py3-none-any.whl", hash = "sha256:ce3b1684d6e1a20a3e5ed36795a97dfc6af29bc3970ca8dab93e11ac6094b3c4"},
+    {file = "virtualenv-20.17.1.tar.gz", hash = "sha256:f8b927684efc6f1cc206c9db297a570ab9ad0e51c16fa9e45487d36d1905c058"},
 ]

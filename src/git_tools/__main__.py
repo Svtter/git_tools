@@ -27,7 +27,7 @@ def unsafe_cmd(name, msg):
 
 
 @click.command(help="feat -> quick feat command")
-@click.argument("--command", type=str)
+@click.argument("--command", type=click.Choice(["feat", "docs", "ref", "fix"]))
 @click.argument("--msg", type=str)
 def run(command, msg):
     from functools import partial
@@ -36,3 +36,6 @@ def run(command, msg):
         on_success=partial(unsafe_cmd, command, msg),
         on_failed=partial(safe_cmd, command, msg),
     )
+
+
+cli.add_command(run)
